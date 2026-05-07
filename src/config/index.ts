@@ -33,6 +33,10 @@ export const config = {
 		locale: storage.get('locale') || 'zh-cn',
 		languages: [
 			{
+				label: '日本語',
+				value: 'jp'
+			},
+			{
 				label: '中文',
 				value: 'zh-cn'
 			},
