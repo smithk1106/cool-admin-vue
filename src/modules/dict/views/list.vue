@@ -216,18 +216,18 @@ const Table = useTable({
 			width: 100,
 			fixed: 'right'
 		},
-		{
-			label: t('创建时间'),
-			prop: 'createTime',
-			sortable: 'custom',
-			minWidth: 170
-		},
-		{
-			label: t('更新时间'),
-			prop: 'updateTime',
-			sortable: 'custom',
-			minWidth: 170
-		},
+		// {
+		// 	label: t('创建时间'),
+		// 	prop: 'createTime',
+		// 	sortable: 'custom',
+		// 	minWidth: 170
+		// },
+		// {
+		// 	label: t('更新时间'),
+		// 	prop: 'updateTime',
+		// 	sortable: 'custom',
+		// 	minWidth: 170
+		// },
 		{
 			type: 'op',
 			width: 250,

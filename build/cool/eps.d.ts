@@ -502,6 +502,557 @@ declare namespace Eps {
 		[key: string]: any;
 	}
 
+	interface GoodsHistoryEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 商品ID
+		 */
+		goodsId?: number;
+
+		/**
+		 * 数据源ID
+		 */
+		sourceId?: number;
+
+		/**
+		 * RANK
+		 */
+		rank?: number;
+
+		/**
+		 * 点评数量
+		 */
+		review_count?: number;
+
+		/**
+		 * 评级
+		 */
+		rating?: number;
+
+		/**
+		 * 价格
+		 */
+		price?: number;
+
+		/**
+		 * 库存
+		 */
+		stock?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 名称
+		 */
+		goodsName?: string;
+
+		/**
+		 * 品牌
+		 */
+		brand?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface GoodsOrderPlanEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 商品ID
+		 */
+		goodsId?: number;
+
+		/**
+		 * 进货价格
+		 */
+		inPrice?: number;
+
+		/**
+		 * 进货数量
+		 */
+		inCount?: number;
+
+		/**
+		 * 状态
+		 */
+		status?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 名称
+		 */
+		goodsName?: string;
+
+		/**
+		 * 品牌
+		 */
+		brand?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface GoodsScoresEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 商品ID
+		 */
+		goodsId?: number;
+
+		/**
+		 * RANK评分
+		 */
+		rank_score?: number;
+
+		/**
+		 * 趋势评分
+		 */
+		trend_score?: number;
+
+		/**
+		 * 点评评分
+		 */
+		review_score?: number;
+
+		/**
+		 * 价格评分
+		 */
+		price_score?: number;
+
+		/**
+		 * 评级评分
+		 */
+		rating_score?: number;
+
+		/**
+		 * 总评分
+		 */
+		total_score?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 名称
+		 */
+		goodsName?: string;
+
+		/**
+		 * 品牌
+		 */
+		brand?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface SourceSiteEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 分类ID
+		 */
+		categoryId?: number;
+
+		/**
+		 * 父级ID
+		 */
+		parentId?: number;
+
+		/**
+		 * 名称
+		 */
+		name?: string;
+
+		/**
+		 * 抓取URL
+		 */
+		url?: string;
+
+		/**
+		 * 排序
+		 */
+		sort?: number;
+
+		/**
+		 * 状态
+		 */
+		status?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface OrderCategoryEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 名称
+		 */
+		name?: string;
+
+		/**
+		 * 图标
+		 */
+		icon?: string;
+
+		/**
+		 * 排序
+		 */
+		sort?: number;
+
+		/**
+		 * 父级ID
+		 */
+		parentId?: number;
+
+		/**
+		 * 删除标记
+		 */
+		isDelete?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface OrderGoodsEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 图片
+		 */
+		pic?: string;
+
+		/**
+		 * 名称
+		 */
+		name?: string;
+
+		/**
+		 * SKU
+		 */
+		sku?: string;
+
+		/**
+		 * 描述
+		 */
+		description?: string;
+
+		/**
+		 * 分类ID
+		 */
+		categoryId?: number;
+
+		/**
+		 * 规格ID
+		 */
+		specId?: number;
+
+		/**
+		 * 品牌ID
+		 */
+		brandId?: number;
+
+		/**
+		 * 品牌
+		 */
+		brand?: string;
+
+		/**
+		 * 价格
+		 */
+		price?: number;
+
+		/**
+		 * 库存
+		 */
+		stock?: number;
+
+		/**
+		 * 排序
+		 */
+		sort?: number;
+
+		/**
+		 * 状态
+		 */
+		status?: number;
+
+		/**
+		 * 删除标记
+		 */
+		isDelete?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 名称
+		 */
+		categoryName?: string;
+
+		/**
+		 * 名称
+		 */
+		specName?: string;
+
+		/**
+		 * 值
+		 */
+		specValue?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface OrderInfoEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 商品ID
+		 */
+		goodsId?: number;
+
+		/**
+		 * 会员ID
+		 */
+		memberId?: number;
+
+		/**
+		 * 商品名
+		 */
+		goodsName?: string;
+
+		/**
+		 * 商品图
+		 */
+		pic?: string;
+
+		/**
+		 * 姓名
+		 */
+		name?: string;
+
+		/**
+		 * 电话
+		 */
+		phone?: string;
+
+		/**
+		 * 地址
+		 */
+		address?: string;
+
+		/**
+		 * 邮箱
+		 */
+		email?: string;
+
+		/**
+		 * 支付方式
+		 */
+		payType?: number;
+
+		/**
+		 * 状态
+		 */
+		status?: number;
+
+		/**
+		 * 备注
+		 */
+		remark?: string;
+
+		/**
+		 * 删除标记
+		 */
+		isDelete?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 名称
+		 */
+		goodsTitle?: string;
+
+		/**
+		 * SKU
+		 */
+		goodsSku?: string;
+
+		/**
+		 * 昵称
+		 */
+		memberNickName?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
+	interface OrderMemberEntity {
+		/**
+		 * ID
+		 */
+		id?: number;
+
+		/**
+		 * 头像
+		 */
+		avatar?: string;
+
+		/**
+		 * 昵称
+		 */
+		nickName?: string;
+
+		/**
+		 * 姓名
+		 */
+		name?: string;
+
+		/**
+		 * 性别
+		 */
+		gender?: number;
+
+		/**
+		 * 地址
+		 */
+		address?: string;
+
+		/**
+		 * 电话
+		 */
+		phone?: string;
+
+		/**
+		 * 邮箱
+		 */
+		email?: string;
+
+		/**
+		 * 状态
+		 */
+		status?: number;
+
+		/**
+		 * 删除标记
+		 */
+		isDelete?: number;
+
+		/**
+		 * 创建时间
+		 */
+		createTime?: string;
+
+		/**
+		 * 更新时间
+		 */
+		updateTime?: string;
+
+		/**
+		 * 任意键值
+		 */
+		[key: string]: any;
+	}
+
 	interface PluginInfoEntity {
 		/**
 		 * ID
@@ -978,7 +1529,7 @@ declare namespace Eps {
 
 	type json = any;
 
-	type DictKey = "brand" | "occupation";
+	type DictKey = "brand" | "specification" | "source_site";
 
 	interface PagePagination {
 		size: number;
@@ -1031,6 +1582,46 @@ declare namespace Eps {
 	interface DictTypePageResponse {
 		pagination: PagePagination;
 		list: DictTypeEntity[];
+	}
+
+	interface MarketingGoods_historyPageResponse {
+		pagination: PagePagination;
+		list: GoodsHistoryEntity[];
+	}
+
+	interface MarketingGoods_order_planPageResponse {
+		pagination: PagePagination;
+		list: GoodsOrderPlanEntity[];
+	}
+
+	interface MarketingGoods_scoresPageResponse {
+		pagination: PagePagination;
+		list: GoodsScoresEntity[];
+	}
+
+	interface MarketingSource_sitePageResponse {
+		pagination: PagePagination;
+		list: SourceSiteEntity[];
+	}
+
+	interface OrderCategoryPageResponse {
+		pagination: PagePagination;
+		list: OrderCategoryEntity[];
+	}
+
+	interface OrderGoodsPageResponse {
+		pagination: PagePagination;
+		list: OrderGoodsEntity[];
+	}
+
+	interface OrderInfoPageResponse {
+		pagination: PagePagination;
+		list: OrderInfoEntity[];
+	}
+
+	interface OrderMemberPageResponse {
+		pagination: PagePagination;
+		list: OrderMemberEntity[];
 	}
 
 	interface PluginInfoPageResponse {
@@ -1771,6 +2362,470 @@ declare namespace Eps {
 		request: Request;
 	}
 
+	interface MarketingGoods_history {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<GoodsHistoryEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<GoodsHistoryEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<MarketingGoods_historyPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface MarketingGoods_order_plan {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<GoodsOrderPlanEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<GoodsOrderPlanEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<MarketingGoods_order_planPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface MarketingGoods_scores {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<GoodsScoresEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<GoodsScoresEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<MarketingGoods_scoresPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface MarketingSource_site {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<SourceSiteEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<SourceSiteEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<MarketingSource_sitePageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface OrderCategory {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<OrderCategoryEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<OrderCategoryEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<OrderCategoryPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface OrderGoods {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<OrderGoodsEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<OrderGoodsEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<OrderGoodsPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface OrderInfo {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<OrderInfoEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<OrderInfoEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<OrderInfoPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
+	interface OrderMember {
+		/**
+		 * 删除
+		 */
+		delete(data?: any): Promise<any>;
+
+		/**
+		 * 修改
+		 */
+		update(data?: any): Promise<any>;
+
+		/**
+		 * 单个信息
+		 */
+		info(data?: any): Promise<OrderMemberEntity>;
+
+		/**
+		 * 列表查询
+		 */
+		list(data?: any): Promise<OrderMemberEntity[]>;
+
+		/**
+		 * 分页查询
+		 */
+		page(data?: any): Promise<OrderMemberPageResponse>;
+
+		/**
+		 * 新增
+		 */
+		add(data?: any): Promise<any>;
+
+		/**
+		 * 权限标识
+		 */
+		permission: {
+			delete: string;
+			update: string;
+			info: string;
+			list: string;
+			page: string;
+			add: string;
+		};
+
+		/**
+		 * 权限状态
+		 */
+		_permission: {
+			delete: boolean;
+			update: boolean;
+			info: boolean;
+			list: boolean;
+			page: boolean;
+			add: boolean;
+		};
+
+		request: Request;
+	}
+
 	interface PluginInfo {
 		/**
 		 * 安装插件
@@ -2206,6 +3261,13 @@ declare namespace Eps {
 		};
 		demo: { goods: DemoGoods; tenant: DemoTenant };
 		dict: { info: DictInfo; type: DictType };
+		marketing: {
+			goods_history: MarketingGoods_history;
+			goods_order_plan: MarketingGoods_order_plan;
+			goods_scores: MarketingGoods_scores;
+			source_site: MarketingSource_site;
+		};
+		order: { category: OrderCategory; goods: OrderGoods; info: OrderInfo; member: OrderMember };
 		plugin: { info: PluginInfo };
 		recycle: { data: RecycleData };
 		space: { info: SpaceInfo; type: SpaceType };

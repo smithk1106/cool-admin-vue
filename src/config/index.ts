@@ -30,7 +30,7 @@ export const config = {
 
 	// 国际化配置
 	i18n: {
-		locale: storage.get('locale') || 'zh-cn',
+		locale: storage.get('locale') || 'jp',
 		languages: [
 			{
 				label: '日本語',
